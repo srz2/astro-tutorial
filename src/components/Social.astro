@@ -2,6 +2,8 @@
 const { platform, username, svg_name } = Astro.props;
 ---
 <div class="social-item">
-    <img src={`/social-marks/${svg_name}.svg`} alt=`${svg_name} logo`>
+    <a href={`https://www.${platform}.com/${username}`}>
+        <img src={`/social-marks/${svg_name}.svg`} alt=`${svg_name} logo`>
+    </a>
     <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
 </div>
